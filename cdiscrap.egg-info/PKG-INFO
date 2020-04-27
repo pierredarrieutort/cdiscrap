@@ -1,0 +1,14 @@
+Metadata-Version: 1.2
+Name: cdiscrap
+Version: 0.0.3
+Summary: Python package capable of raising the price of any product on the site www.cdiscount.com
+Home-page: https://github.com/pierredarrieutort/cdiscrap
+Author: Mathieu Daix, Pierre Darrieutort
+Author-email: mathieudaixpro@gmail.com, p.darrieutort@outlook.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8.2

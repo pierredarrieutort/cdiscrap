@@ -1,0 +1,6 @@
+README.md
+setup.py
+cdiscrap.egg-info/PKG-INFO
+cdiscrap.egg-info/SOURCES.txt
+cdiscrap.egg-info/dependency_links.txt
+cdiscrap.egg-info/top_level.txt
