@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: mathieu-pierre-cdiscrap
-Version: 0.0.1
+Version: 0.0.2
 Summary: Python package capable of raising the price of any product on the site www.cdiscount.com
 Home-page: https://github.com/pierredarrieutort/cdiscrap
 Author: Mathieu Daix, Pierre Darrieutort

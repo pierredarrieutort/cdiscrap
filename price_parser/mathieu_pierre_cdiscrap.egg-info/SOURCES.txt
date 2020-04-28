@@ -1,6 +1,5 @@
 README.md
 setup.py
-price_parser/parse_price.py
 price_parser/mathieu_pierre_cdiscrap.egg-info/PKG-INFO
 price_parser/mathieu_pierre_cdiscrap.egg-info/SOURCES.txt
 price_parser/mathieu_pierre_cdiscrap.egg-info/dependency_links.txt

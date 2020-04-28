@@ -12,6 +12,7 @@
         input,
         button {
             display: block;
+            margin-bottom: 5px;
         }
     </style>
 </head>
@@ -19,11 +20,12 @@
 <body>
     <h1>Cdiscount price parser</h1>
     <h2>A simple Python method to get a Cdiscount product price</h2>
-    <form role="form" action="/result" method="POST">
+    <form role="form" action="" method="POST">
         <label for="sku">Product identifier</label>
         <input type="text" id="sku" name="sku" size="50">
         <button type="submit">submit</button>
     </form>
+    <p>price = <span>{{cost}}</span>€</p>
 </body>
 
 </html>
