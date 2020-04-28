@@ -1,4 +1,4 @@
-from parse_price import sku_to_price, sku, price
+from cdiscount.price_parser import sku_to_price, sku, price
 
 
 def test_sku_no_exists_params():
