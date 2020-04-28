@@ -2,7 +2,7 @@ from parse_price import sku_to_price, sku, price
 
 
 def test_sku_no_exists_params():
-    assert sku("pamplemousse") == sku_to_price()
+    assert sku("pamplemousse") == print("Cet id n'est pas référencé.")
 
 
 def test_sku_with_params():

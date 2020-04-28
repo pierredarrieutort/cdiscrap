@@ -5,7 +5,7 @@ import re
 
 
 def sku_to_price():
-    name = input("Entrez l'id du produit :")
+    name = input("Entrez l'id du produit : ")
     sku(name)
     
 
@@ -15,8 +15,7 @@ def sku(name):
         data = resp.read()
         lien = r'<link rel="canonical" href="https://www.cdiscount.com/" />'
         if re.findall(lien, str(data)):
-            print("Cet id n'est pas référencé")
-            return sku_to_price()
+            print("Cet id n'est pas référencé.")
         else:
             price(data)
 
