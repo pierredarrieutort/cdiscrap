@@ -7,7 +7,7 @@ $ pip install cdiscountpriceparser
 
 ## Usage
 ```python
-$ python
+python
 
 >>> from price_parser import parse_price
 
