@@ -5,7 +5,8 @@ import re
 
 def parse_price(sku):
 
-    with urllib.request.urlopen('https://www.cdiscount.com/f-0-' + sku + '.html') as resp:
+    url = 'https://www.cdiscount.com/f-0-' + sku + '.html'
+    with urllib.request.urlopen(url) as resp:
 
         lien = r'<link rel="canonical" href="https://www.cdiscount.com/" />'
         data = resp.read()
@@ -16,6 +17,6 @@ def parse_price(sku):
         else:
             soup = BeautifulSoup(data, 'html.parser')
             classe = 'fpPrice price jsMainPrice jsProductPrice hideFromPro'
-            prix = float(re.findall(
-                r'content="(.*?)"', str(soup.find_all('span', {'class': classe})))[0])
+            element = str(soup.find_all('span', {'class': classe}))
+            prix = float(re.findall(r'content="(.*?)"', element)[0])
             return prix
