@@ -3,21 +3,19 @@ import urllib.request
 import re
 
 
-def parse_price():
-    name = input("Entrez l'id du produit : ")
+def parse_price(sku):
 
-    with urllib.request.urlopen('https://www.cdiscount.com/f-0-' + name + '.html') as resp:
+    with urllib.request.urlopen('https://www.cdiscount.com/f-0-' + sku + '.html') as resp:
 
-        data = resp.read()
         lien = r'<link rel="canonical" href="https://www.cdiscount.com/" />'
+        data = resp.read()
 
         if re.findall(lien, str(data)):
-            print("Cet id n'est pas référencé.")
-            return parse_price()
+            return False
 
         else:
             soup = BeautifulSoup(data, 'html.parser')
-            prixClasse = 'fpPrice price jsMainPrice jsProductPrice hideFromPro'
-            prixData = float(re.findall(
-                r'content="(.*?)"', str(soup.find_all('span', {'class': prixClasse})))[0])
-            print(prixData)
+            classe = 'fpPrice price jsMainPrice jsProductPrice hideFromPro'
+            prix = float(re.findall(
+                r'content="(.*?)"', str(soup.find_all('span', {'class': classe})))[0])
+            return prix

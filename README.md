@@ -13,7 +13,7 @@ from price_parser import parse_price
 # Generate "Cet id n'est pas référencé."
 parse_price()
 
-# Generate "1776.60"
+# Generate "1776.6"
 parse_price("del5397184246030")
 ```
 
