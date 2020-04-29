@@ -7,6 +7,6 @@ COPY . /
 WORKDIR /
 RUN pip install ./
 WORKDIR /www
-EXPOSE 5000
+EXPOSE 8080
 ENTRYPOINT ["python"]
 CMD ["www/app.py"]
