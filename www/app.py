@@ -1,8 +1,7 @@
 from flask import Flask, request, render_template
-from price_parser import parse_price
+from cdiscount_parser.price_parser import parse_price
 
 app = Flask(__name__)
-
 
 @app.route('/')
 def index():
@@ -17,4 +16,4 @@ def result():
 
 
 if __name__ == "__name__":
-    app.run(ssl_context='adhoc')
+    app.run(host='0.0.0.0',port=5000)

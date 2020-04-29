@@ -1,12 +1,9 @@
 FROM python:3.8.2
-ENV FLASK_APP "www/app.py"
-COPY . /www
+COPY www /www
 WORKDIR /www
-RUN pip install -r www/requirements.txt
+RUN pip install -r requirements.txt
 COPY . /
-WORKDIR /
+WORKDIR /cdiscount
 RUN pip install ./
 WORKDIR /www
-EXPOSE 8080
-ENTRYPOINT ["python"]
-CMD ["www/app.py"]
+CMD ["python","app.py"]

@@ -4,7 +4,6 @@ import re
 
 
 def parse_price(sku):
-
     url = 'https://www.cdiscount.com/f-0-' + sku + '.html'
     with urllib.request.urlopen(url) as resp:
 
