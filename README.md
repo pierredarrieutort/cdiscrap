@@ -10,10 +10,10 @@ pip install cdiscountpriceparser
 python
 from price_parser import parse_price
 
-# Generate "Cet id n'est pas référencé."
+# Return "False"
 parse_price()
 
-# Generate "1776.6"
+# Return "1776.6"
 parse_price("del5397184246030")
 ```
 
