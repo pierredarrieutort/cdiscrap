@@ -24,5 +24,6 @@ pip install -e .[dev]
 
 ## Docker usage
 ```
-docker build --pull --rm -f "Dockerfile" -t cdiscount:latest "."
+docker build --tag price_parser .
+docker run --name price_parser -p 8080:8080 price_parser
 ```
