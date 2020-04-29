@@ -1,3 +1,0 @@
-price
-sku
-sku_to_price

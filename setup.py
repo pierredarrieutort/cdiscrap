@@ -1,26 +1,33 @@
 from setuptools import setup
 
 with open("README.md", "r") as fh:
-    long_description= fh.read()
-
+    long_description = fh.read()
 
 setup(
-    name='mathieu-pierre-cdiscrap',
-    version='0.0.2',
-    description='Python package capable of raising the price of any product on the site www.cdiscount.com',
-    py_modules=["sku_to_price", "sku", "price"],
-    package_dir={'': 'price_parser'},
+    name='cdiscountpriceparser',
+    version='0.0.1',
+    description='price parser of cdiscount product.',
+    py_modules=["price_parser"],
+    package_dir={'': 'cdiscount'},
     classifiers=[
-        "Programming Language :: Python :: 3.8",
+        "Development Status :: 5 - Production/Stable",
         "License :: OSI Approved :: MIT License",
-        "Operating System :: OS Independent"
+        "Operating System :: OS Independent",
+        "Programming Language :: Python :: 3.8"
     ],
-    extras_require = {
+    long_description=long_description,
+    long_description_content_type="text/markdown",
+    install_requires=[
+        "beautifulsoup4 ~= 4.9.0",
+        "urllib3 ~= 1.25.9",
+        "regex ~= 2020.4.4"
+    ],
+    extras_require={
         "dev": [
-            "pytest>=3.7"
+            "pytest>=5.4.1"
         ]
     },
     url="https://github.com/pierredarrieutort/cdiscrap",
-    author="Mathieu Daix, Pierre Darrieutort",
+    author="mathieudaix, pierredarrieutort",
     author_email="mathieudaixpro@gmail.com, p.darrieutort@outlook.fr"
 )

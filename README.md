@@ -1,34 +1,23 @@
-# cdiscrap
+# cdiscount price parser
 
-Python package capable of raising the price of any product on the site www.cdiscount.com
-
-## Install
-```
-$ pip install cdiscrap
+## Installation
+```python
+pip install cdiscountpriceparser
 ```
 
 ## Usage
-```
-$ python
->>> from parse_price import sku_to_price, sku, price
->>> sku('YOUR_SKU')
-```
+```python
+python
+from price_parser import parse_price
 
-## Tests
-```
-$ pip install pytest
+# Generate "Cet id n'est pas référencé."
+parse_price()
 
-$ pytest
+# Generate "1776.60"
+parse_price("del5397184246030")
 ```
 
-
-python setup.py bdist_wheel sdist 
-ls dist
-pip install twine
-twine upload dist/*
-user : mathieu-pierre
-pass : b.6+@&#v*mApn+7
-pip install mathieu-pierre-cdiscrap
-
-cd www
-flask run
+## Development
+```python
+pip install -e .[dev]
+```
