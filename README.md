@@ -25,5 +25,5 @@ pip install -e .[dev]
 ## Docker usage
 ```
 docker build --tag price_parser .
-docker run --name price_parser -p 8080:8080 price_parser
+docker run --name price_parser -p 5000:5000 price_parser
 ```
