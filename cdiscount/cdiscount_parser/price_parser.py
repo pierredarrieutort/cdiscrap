@@ -19,3 +19,4 @@ def parse_price(sku):
             element = str(soup.find_all('span', {'class': classe}))
             prix = float(re.findall(r'content="(.*?)"', element)[0])
             return prix
+cc
