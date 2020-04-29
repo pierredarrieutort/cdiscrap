@@ -19,4 +19,3 @@ setup(
     author="mathieudaix, pierredarrieutort",
     author_email="mathieudaixpro@gmail.com, p.darrieutort@outlook.fr"
 )
-cc
