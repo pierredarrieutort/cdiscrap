@@ -21,3 +21,8 @@ parse_price("del5397184246030")
 ```python
 pip install -e .[dev]
 ```
+
+## Docker usage
+```
+docker build --pull --rm -f "Dockerfile" -t cdiscount:latest "."
+```
