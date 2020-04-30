@@ -1,5 +1,16 @@
 # Cdiscount price parser
 
+Python package capable of raising the price of any product on the site www.cdiscount.com
+
+## Table of contents
+
+1. [Installation](#installation)
+2. [Usage](#usage)
+3. [Development](#development)
+4. [Flask](#flask)
+5. [Docker usage](#docker-usage)
+6. [Collaborators](#collaborators)
+
 ## Installation
 ```powershell
 # From Pypi
