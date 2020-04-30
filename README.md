@@ -2,17 +2,24 @@
 
 ## Installation
 ```powershell
+# From Pypi
 $ pip install cdiscountpriceparser
+
+# Locally
+$ pip install -e .
 ```
 
 ## Usage
 ```python
 python
 
->>> from price_parser import parse_price
+>>> from cdiscount_parser.price_parser import parse_price
 
 # Return "False"
 >>> parse_price()
+
+# Return "False"
+>>> parse_price("random")
 
 # Return "1776.6"
 >>> parse_price("del5397184246030")

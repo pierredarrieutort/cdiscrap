@@ -3,14 +3,17 @@ import urllib.request
 import re
 
 
-def parse_price(sku):
-    url = 'https://www.cdiscount.com/f-0-' + sku + '.html'
+def parse_price(sku=None):
+    url = f"https://www.cdiscount.com/f-0-{sku}.html"
     with urllib.request.urlopen(url) as resp:
 
         lien = r'<link rel="canonical" href="https://www.cdiscount.com/" />'
         data = resp.read()
 
         if re.findall(lien, str(data)):
+            return False
+
+        elif sku is None:
             return False
 
         else:
