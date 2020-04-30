@@ -6,13 +6,12 @@
 $ pip install cdiscountpriceparser
 
 # Locally
+$ cd cdiscount
 $ pip install -e .
 ```
 
 ## Usage
 ```python
-python
-
 >>> from cdiscount_parser.price_parser import parse_price
 
 # Return "False"
@@ -27,7 +26,14 @@ python
 
 ## Development
 ```powershell
+$ cd cdiscount
 $ pip install -e .[dev]
+```
+
+## Flask
+```powershell
+$ cd www
+$ flask run
 ```
 
 ## Docker usage
