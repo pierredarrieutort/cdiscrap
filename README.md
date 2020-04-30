@@ -47,18 +47,18 @@ $ docker run --name price_parser -p 5000:5000 price_parser
 <table>
     <tbody>
         <tr>
-            <td align="center" valign="top" width="140">
+            <td align="center" width="140">
                 <a href="https://github.com/pierredarrieutort">
                     <img src="https://avatars0.githubusercontent.com/u/25182438?s=460&amp;v=4" alt="Pierre Darrieutort" width="100px;" />
                     <br />
-                    <sup><strong>Pierre Darrieutort</strong></sup>
+                    <strong style="font-size: 13px">Pierre Darrieutort</strong>
                 </a>
             </td>
-            <td align="center" valign="top" width="140">
-                <a href="https://github.com/mathieudaix&quot;">
+            <td align="center" width="140">
+                <a href="https://github.com/mathieudaix">
                     <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/95019821_1336186823257776_6091369584101687296_n.jpg?_nc_cat=109&_nc_sid=b96e70&_nc_ohc=vzl7zKAyKi0AX9JY36K&_nc_ad=z-m&_nc_cid=0&_nc_zor=9&_nc_ht=scontent.xx&oh=c0b399312a81efd43099d87ea03d8b37&oe=5ECFC9AF" alt="Mathieu Daix" width="100px;" />
                     <br />
-                    <sup><strong>Mathieu Daix</strong></sup>
+                    <strong style="font-size: 13px">Mathieu Daix</strong>
                 </a>
             </td>
         </tr>
