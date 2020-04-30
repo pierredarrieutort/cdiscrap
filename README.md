@@ -1,4 +1,4 @@
-# cdiscount price parser
+# Cdiscount price parser
 
 ## Installation
 ```powershell
