@@ -41,3 +41,5 @@ $ flask run
 $ docker build --tag price_parser .
 $ docker run --name price_parser -p 5000:5000 price_parser
 ```
+
+By Mathieu Daix & Pierre Darrieutort
