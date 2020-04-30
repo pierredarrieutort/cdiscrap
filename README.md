@@ -9,6 +9,7 @@ $ pip install cdiscountpriceparser
 $ cd cdiscount
 $ pip install -e .
 ```
+[Link to package on Pypi](https://pypi.org/project/cdiscountpriceparser/)
 
 ## Usage
 ```python
@@ -42,4 +43,5 @@ $ docker build --tag price_parser .
 $ docker run --name price_parser -p 5000:5000 price_parser
 ```
 
+## Infos
 By Mathieu Daix & Pierre Darrieutort
