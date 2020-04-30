@@ -7,25 +7,101 @@
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Cdiscount price parser</title>
+    <link rel="stylesheet" href="https://unpkg.com/destyle.css@1.0.11/destyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
     <style>
-        label,
-        input,
+        html {
+            font-size: 16px;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            color: #111;
+            background: #f7f7f7;
+        }
+
+        section {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        div {
+            width: 90%;
+            max-width: 36rem;
+            margin: 0 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background: #fff;
+            padding: 3rem;
+            border: 1px solid #b3b3b3;
+        }
+
+        h1 {
+            font-size: 2rem;
+        }
+
+        p {
+            margin: 1rem 0 3rem;
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+
+        a {
+            color: #2b3ef3;
+        }
+
+        input {
+            width: 100%;
+            font-size: 1.2rem;
+            border-bottom: 1px solid #b3b3b3;
+            padding: 0.5rem;
+            display: block;
+            color: #111;
+            font-size: 1rem;
+        }
+
+        input::placeholder {
+            color: #535353;
+            font-size: 1rem;
+        }
+
         button {
             display: block;
-            margin-bottom: 10px;
+            background: #2b3ef3;
+            color: #fff;
+            padding: 1rem 2rem;
+            border-radius: 70px;
+            margin-top: 2rem;
+        }
+
+        span {
+            display: block;
+            margin-top: 2rem;
+            font-size: 1.4rem;
         }
     </style>
 </head>
 
 <body>
-    <h1>Cdiscount price parser</h1>
-    <h2>A simple Python method to get a Cdiscount product price</h2>
-    <form role="form" action="" method="POST">
-        <label for="sku">Product identifier</label>
-        <input type="text" id="sku" name="sku" size="50">
-        <button type="submit">submit</button>
-    </form>
-    <p>price = <span>{{cost}}</span>€</p>
+
+    <section>
+        <div>
+            <h1>Cdiscount price parser</h1>
+            <p>Python package capable of raising the price of any product on the site <a
+                    href="https://www.cdiscount.com/" target="_blank">cdiscount.com</a></p>
+            <form role="form" action="" method="POST">
+                <input type="text" id="sku" name="sku" placeholder="Enter your sku" size="50">
+                <button type="submit">Generate the price</button>
+            </form>
+            <span>The price is {{cost}} €</span>
+        </div>
+    </section>
+
 </body>
 
 </html>
