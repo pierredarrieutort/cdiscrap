@@ -75,5 +75,3 @@ $ docker run --name price_parser -p 5000:5000 price_parser
         </tr>
     </tbody>
 </table>
-
-<!-- git test -->
